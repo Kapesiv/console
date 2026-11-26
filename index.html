@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Console</title>
+<meta name="description" content="Console — coming soon.">
+<style>
+  :root { color-scheme: dark light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b0c10;
+    color: #e6e6e6;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  main { text-align: center; padding: 2rem; }
+  h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    letter-spacing: 0.02em;
+    margin: 0 0 0.5rem;
+  }
+  p { color: #9aa0a6; margin: 0; font-size: 1rem; }
+  .cursor {
+    display: inline-block;
+    width: 0.6ch;
+    background: #e6e6e6;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  @media (prefers-color-scheme: light) {
+    body { background: #f7f7f8; color: #111; }
+    p { color: #555; }
+    .cursor { background: #111; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>console<span class="cursor">&nbsp;</span></h1>
+  <p>Coming soon.</p>
+</main>
+</body>
+</html>
